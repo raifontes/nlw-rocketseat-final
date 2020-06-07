@@ -1,0 +1,92 @@
+@media (max-width: 500px){
+    #page-home header a{
+        bottom: 8px;
+    }
+
+    /*Responsividade da Modal*/
+    #modal .content{
+        width: 300px;
+        margin: auto 0;
+    }
+
+    #modal .content h1{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 900px){
+
+    #page-home{
+        background-position-x: 70vw;
+    } 
+  
+    #page-home .content{
+        align-items: center;
+        text-align: center;
+    }
+  
+    /*
+      (left:50%;) é utilizado para mandar o conteúdo do link para o meio da página, porém esse elemento
+      possui um tamanho associado a ele. Utilizando o translateX o elemento ficará totalmente centralizado.
+    */
+  
+    #page-home header a{
+        position: absolute;
+        bottom: 48px;
+  
+        left: 50%;
+        transform: translateX(-50%)
+    }
+  
+    #page-home main{
+        align-items: center;
+    }
+
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
+    }
+
+    #page-search-results .cards img{
+        height: 250px;
+    }
+
+    #page-create-point .field-group{
+        flex-direction: column;
+    }
+
+    #page-create-point .field-group .field + .field{
+        margin-left: 0;
+    }
+}
+
+
+
+@media (min-width: 1500px){
+    #page-home{
+        background-position-x: 40vw;
+    }
+}
+
+@media (min-width: 1700px){
+    #page-home{
+        background-position-x: 42vw;
+    }
+}
+
+@media (min-height: 800px){
+    #page-home{
+        background-position-y: 30vh;
+    }
+}
+
+@media (min-height: 950px){
+    #page-home{
+        background-position-y: 32vh;
+    }
+}
+
+  @media (min-height: 1230px){
+    #page-home{
+        background-position-y: 35vh;
+    }
+}

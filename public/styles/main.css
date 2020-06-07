@@ -1,0 +1,42 @@
+:root{
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+
+/*
+    Não faz sentido medir a caixa pelo conteúdo que está dentro dela,
+    a caixa é medida pelo tamanho dos seus lados.
+    A formatação padrão do css diz que: 
+            conteúdo + padding + border = tamanho da caixa;
+    Logo, aumentar qualquer um desses atributos modifica o tamanho da caixa.
+
+    Utilizando o box-sizing: border-box; o CSS assume um comportamento mais humano,
+    pois a caixa agora terá o tamanho especificado. Se for definido que uma caixa 
+    tenha tamanho W x H o conteúdo + padding + boder terão que se adaptar a 
+    esse tamanho.
+    Logo:   W x H = conteúdo + padding + border
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--title-color);
+    font-family: 'Ubuntu', sans-serif;
+}
